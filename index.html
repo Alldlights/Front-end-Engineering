@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <h1>Registration Form</h1>
@@ -35,10 +36,25 @@
       </fieldset>
       <fieldset>
         <legend>Account type (required)</legend>
-        <input type="radio" id="personal-account" name="account-type" checked />
-        <label for="account-type">Personal</label>
-        <input type="radio" id="busines-account" name="account-type" />
-        <label for="account-type">Business</label>
+        <label for="account-type"
+          ><input
+            class="inline"
+            type="radio"
+            id="personal-account"
+            name="account-type"
+            checked
+          />
+          Personal</label
+        >
+        <label for="account-type"
+          ><input
+            class="inline"
+            type="radio"
+            id="busines-account"
+            name="account-type"
+          />
+          Business</label
+        >
       </fieldset>
       <fieldset>
         <label for="profile-pic">
@@ -46,28 +62,32 @@
           <input type="file" id="profile-pic" name="profile-pic" />
         </label>
         <label for="age">
-            Input your age (years):
+          Input your age (years):
           <input type="number" id="age" name="age" min="13" max="120" />
         </label>
         <label for="refer">
-            How did you hear about us?
-            <select id="refer" name="refer">
-                <option value="">(select one)</option>
-                <option value="1">freeCodeCamp News</option>
-                <option value="2">freeCodeCamp YouTube Channel</option>
-                <option value="3">freeCodeCamp Forum</option>
-                <option value="4">Others</option>
-            </select>
+          How did you hear about us?
+          <select id="refer" name="refer">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Others</option>
+          </select>
         </label>
         <label for="bio">
-            Provide a bio:
-            <textarea id="bio" name="bio" cols="30" rows="3"></textarea>
+          Provide a bio:
+          <textarea id="bio" name="bio" cols="30" rows="3"></textarea>
         </label>
       </fieldset>
-      <input type="checkbox" id="terms" name="terms"/>
-      <label for="bio">I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">
-        terms and conditions</a></label>
-      <input type="submit" value="Submit"/>
+      <label for="bio">
+        <input class="inline" type="checkbox" id="terms" name="terms" />
+        I accept the
+        <a href="https://www.freecodecamp.org/news/terms-of-service/">
+          terms and conditions</a>
+      </label
+      >
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
